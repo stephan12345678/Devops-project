@@ -14,7 +14,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/auteurs")
 public class AuteurController {
-    private final AuteurService auteurService;
+    private AuteurService auteurService;
 
 
     public AuteurController(AuteurService auteurService) {

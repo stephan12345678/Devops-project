@@ -23,6 +23,8 @@ public class Auteur {
 
     private String nom;
     private String prenom;
+
+    //Évite la récursion infinie
     @JsonIgnore
     @OneToMany(mappedBy = "auteur", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Livre> livres;
